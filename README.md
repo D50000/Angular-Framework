@@ -1,6 +1,7 @@
 # Angular-Framework
 
-Online Demo: [https://stackblitz.com/edit/angular-yfujul](https://stackblitz.com/edit/angular-yfujul)
+Angular is a Web MVC framework that base on the TypeScript developed by Google.
+There are list of useful example below.
 
 ## Setup Environment & tools
 
@@ -11,3 +12,8 @@ Online Demo: [https://stackblitz.com/edit/angular-yfujul](https://stackblitz.com
 5. `ng new my-app` to create a new project.
 6. Go the the folder `cd my-app` and start the local server `ng serve --open`.
 7. Install develop tool [Augury](https://augury.rangle.io/).
+
+## Useful examples
+
+Official Quick Start project:
+Online Demo: [https://stackblitz.com/edit/angular-yfujul](https://stackblitz.com/edit/angular-yfujul)

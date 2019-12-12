@@ -11,3 +11,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - **subscribe()** // getting asynchronous API data
 - constructor(**public messageService: MessageService**) { }  // Bind with Service
 - **router-outlet** // router matcher component.
+- Library **@angular/common/http**, **rxjs/operators**.

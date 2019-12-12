@@ -16,4 +16,4 @@ There are list of useful example below.
 ## Useful examples
 
 - Official Quick Start project: [https://stackblitz.com/edit/angular-yfujul](https://stackblitz.com/edit/angular-yfujul)
-- Heroes App (data-driven application): 
+- Heroes App (data-driven application): [https://stackblitz.com/angular/ygvdxjekeba](https://stackblitz.com/angular/ygvdxjekeba)

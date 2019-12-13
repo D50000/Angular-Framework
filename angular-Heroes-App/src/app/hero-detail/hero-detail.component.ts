@@ -11,7 +11,7 @@ import { Hero } from '../hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  heroo: Hero;
+  herooo: Hero;
   
   constructor(
     private heroService: HeroService,
@@ -27,10 +27,16 @@ export class HeroDetailComponent implements OnInit {
     // The JavaScript (+) operator converts the string to a number.
     const id = +this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id)
-      .subscribe(hero => this.heroo = hero);
+      .subscribe(hero => this.herooo = hero);
   }
 
   goBack(): void {
     this.location.back();
   }
+
+  save(): void {
+    this.heroService.updateHero(this.herooo)
+      .subscribe(() => this.goBack());
+  }
+
 }

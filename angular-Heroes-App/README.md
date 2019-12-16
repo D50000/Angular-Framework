@@ -14,3 +14,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Library **@angular/common/http**, **rxjs/operators**.
 - **HttpClient.put()**, **HttpClient.post()**
 - `<input #heroName /> <button (click)="add(heroName.value)>` // Select the input textbox.
+- the pipe **|** character // for filter expression.

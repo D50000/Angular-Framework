@@ -17,3 +17,17 @@ There are list of useful example below.
 
 - Official Quick Start project: [https://stackblitz.com/edit/angular-yfujul](https://stackblitz.com/edit/angular-yfujul)
 - Heroes App (data-driven application): [https://stackblitz.com/angular/ygvdxjekeba](https://stackblitz.com/angular/ygvdxjekeba)
+
+
+## Running Server
+1. ```ng serve``` to run the server first.
+```
+..... 
+webpack: Compiled successfully.
+```
+2. ```Ctrl + z``` to stop the job and check the number.
+```
+^Z
+[1]+  Stopped                 npm run remote
+```
+3. ```bg %1``` to run in background and ```fg %1``` to run at foreground.

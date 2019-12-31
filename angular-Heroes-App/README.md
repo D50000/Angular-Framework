@@ -15,4 +15,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - **HttpClient.put()**, **HttpClient.post()**
 - `<input #heroName /> <button (click)="add(heroName.value)>` // Select the input textbox.
 - the pipe **|** character // for filter expression.
-- `<li *ngFor="let hero of heroes$ | async" >` // AsyncPipe. The **$** is a convention that indicates heroes$ is an Observable, not an array.
+- `<li *ngFor="let hero of heroes$ | async" >` // AsyncPipe for Observable<Hero[]> data. The **$** is a convention that indicates heroes$ is an Observable, not an array.

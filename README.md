@@ -34,7 +34,7 @@ webpack: Compiled successfully.
 
 ## Lifecycle Hooks
 
-![](https://github.com/D50000/Angular-Framework/blob/master/life cycle.png)
+![](https://github.com/D50000/Angular-Framework/blob/master/life%20cycle.png)
 
 - **ngOnChanges**  − When the value of a data bound property changes, then this method is called.
 - **ngOnInit**  − This is called whenever the initialization of the directive/component after Angular first displays the data-bound properties happens.

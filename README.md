@@ -54,7 +54,9 @@ webpack: Compiled successfully.
   2. Companies' projects related (our companies’ stuff with @)
   3. Project related (current project with @)
   4. Relative path of our files in this project
-  5. Other libraries
+  5. Other libraries  
+  
+![](https://github.com/D50000/Angular-Framework/blob/master/Angular%20convention%20import%20order.png)
 
 ### Class members, methods order
 1. Decorator, @ViewChild → @Input → @Output

@@ -66,3 +66,6 @@ webpack: Compiled successfully.
 5. public function, lifecycle related function first (e.g., ngOnInit)
 6. private function
 
+#### Useful Plugin
+- [Angular Material](https://material.angular.io/)
+- [Nx & Angular](https://nx.dev/getting-started/intro)

@@ -69,3 +69,5 @@ webpack: Compiled successfully.
 #### Useful Plugin
 - [Angular Material](https://material.angular.io/)
 - [Nx & Angular](https://nx.dev/getting-started/intro)
+- [RX.JS](https://rxjs.dev/guide/overview)
+- [SCSS](https://sass-lang.com/guide)

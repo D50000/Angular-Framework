@@ -47,7 +47,7 @@ webpack: Compiled successfully.
 | 8 | **ngAfterViewChecked** | This is called in response after Angular checks the component's views and child views. | It calls after ngAfterViewInit and after every ngAfterContentChecked. |
 | 9 | **ngOnDestroy** | This is the cleanup phase just before Angular destroys the directive/component. | Before Angular destory component and directive. |
 
-## Convention
+## Coding Convention
 
 ### Import order for all .ts files, relative path
   1. Angular related
@@ -59,12 +59,12 @@ webpack: Compiled successfully.
 ![](https://github.com/D50000/Angular-Framework/blob/master/Angular%20convention%20import%20order.png)
 
 ### Class members, methods order
-1. Decorator, @ViewChild → @Input → @Output
-2. Public property → private property
-3. Public getter → private getter
-4. constructor
-5. public function, lifecycle related function first (e.g., ngOnInit)
-6. private function
+1. Decorator: @ViewChild → @Input → @Output
+2. Modyfier: Public property → private property
+3. Getter: Public getter → private getter
+4. Constructor
+5. Lifecycle: ngOnChanges → ngOnInit → ngAfterViewInit
+6. Function: public function, private function
 
 #### Useful Plugin
 - [Angular Material](https://material.angular.io/)

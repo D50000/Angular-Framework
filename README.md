@@ -18,19 +18,32 @@ There are list of useful example below.
 - Official Quick Start project: [https://stackblitz.com/edit/angular-yfujul](https://stackblitz.com/edit/angular-yfujul)
 - Heroes App (data-driven application): [https://stackblitz.com/angular/ygvdxjekeba](https://stackblitz.com/angular/ygvdxjekeba)
 
-## Running Server
+## Angular CLI
 
-1. ```ng serve``` to run the server first.
+- Run the server in local or remote VM.
 ```
-..... 
-webpack: Compiled successfully.
+$ ng serve --host 0.0.0.0 --port 4200
 ```
-2. ```Ctrl + z``` to stop the job and check the number.
+- ```Ctrl + c``` stop and cancel the job/server. ```Ctrl + z``` to pause/hold the job/server and check the number.
 ```
-^Z
-[1]+  Stopped                 npm run remote
+# Kill the server
+^c 
+
+# Pause the server and it show the id.
+^z
+[1]+  Stopped               npm run remote
 ```
-3. ```bg %1``` to run in background and ```fg %1``` to run at foreground.
+- ```bg %N``` to run in background and ```fg %N``` to run at foreground.
+```
+# Number is [1]
+$ bg %1
+$ fg %1
+```
+- Build the project.
+```
+# Run build and get the compiled result in ./dist/*
+$ ng build --configuration=production
+```
 
 ## Lifecycle Hooks
 

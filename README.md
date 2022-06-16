@@ -82,20 +82,26 @@ $ ng build --configuration=production
 - [Bind values between components](https://angular.io/guide/property-binding#bind-values-between-components)
 
 ```Html
-<!-- component.html -->
+<!-- parent-component.html -->
 <!-- 1. Data pass through parent to children -->
 <app-item-detail [childItem]="parentItem"></app-item-detail>
 
 <!-- 2. Data emit through children to parent -->
 <div (open)="onOpen($event)" (close)="onClose($event)"></div>
+
+<!-- 3. Emit from 'onChange' -->
+<ui-search-input
+  [ngModel]="itemNameToSearch"
+  (ngModelChange)="changeItemNameToSearch($event)"
+></ui-search-input>
 ```
 
 ```TypeScript
-// component.ts
-// 1. Input data
+// children-component.ts
+// 1. Input data from <app-item-detail>
 @Input() childItem = [1,2,3];
 
-// 2. Emit binding function in children
+// 2. Emit open/close binding to parent's onOpen/onClose
 @Output() open: EventEmitter<any> = new EventEmitter();
 @Output() close: EventEmitter<any> = new EventEmitter();
 toggle() {
@@ -105,6 +111,10 @@ toggle() {
       this.close.emit({a:1, b:2});
     }
   }
+
+// 3. Emit data to <ui-search-input>
+onChange: (value: Item<T>[]) => void;
+onTouched: () => void;
 ```
 
 ## Coding Convention

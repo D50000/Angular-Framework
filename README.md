@@ -138,6 +138,50 @@ onTouched: () => void;
 5. Lifecycle: ngOnChanges → ngOnInit → ngAfterViewInit
 6. Function: public function, private function
 
+### Unit Test
+3A principal: **Arrange**, **Act**, **Assert**
+```TypeScript
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MyComponent } from './my-component.component';
+
+describe('MyComponent', () => {
+  let component: MyComponent;
+  let fixture: ComponentFixture<MyComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ MyComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(MyComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create the component', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should display the correct text', () => {
+    component.text = 'Hello World';
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('p').textContent).toContain('Hello World');
+  });
+
+  it('should call the onClick function when the button is clicked', () => {
+    const onClickSpy = spyOn(component, 'onClick');
+    const button = fixture.nativeElement.querySelector('button');
+    button.click();
+    expect(onClickSpy).toHaveBeenCalled();
+  });
+});
+```
+`ng test` to run the unit test.
+
 #### Useful Plugin
 
 - [Angular Material](https://material.angular.io/)
